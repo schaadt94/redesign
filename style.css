@@ -1,3 +1,15 @@
+body {
+    background:
+}
+
+h3 {
+    color: #f0cf81;
+}
+
+p {
+    color: #f0cf81;
+}
+
 ul {
     list-style-type: none;
     overflow: hidden;
@@ -15,7 +27,7 @@ li {
 
 li a {
     display: block;
-    color: #bfaa52;
+    color: #f0cf81;
     text-align: center;
     Letter-spacing: 1px;
     text-decoration: none;
@@ -27,3 +39,37 @@ li a:hover {
 
 }
 
+
+/*Kontakt formular start*/
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #fafafa;
+    color: #363636;
+    padding: 8px 20px;
+    border: none;
+
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #bfaa52;
+}
+
+.container {
+    background-color: #282828;
+    padding: 20px;
+}
+
+/*kontakt formular slut*/
