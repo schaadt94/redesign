@@ -9,34 +9,42 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="forside.html">Forside</a></li>
-                <li><a href="#om.html">Om Godt Øl</a></li>
-                <li><a href="oelkort.html">Ølkort</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-
-<section id="Om">
-    <div class="sectionwrapper">
-        <div class="video">
-            <h3>Vores korte video</h3>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="forside.html">Forside</a>
+            <a href="om.html">Om Godt Øl</a>
+            <a href="oelkort.html">Ølkort</a>
+            <a href="events.html">Events</a>
+            <a href="kontakt.html">Kontakt</a>
         </div>
-        <div class="tekst">
-            <p>Godt Øl er en hyggelig specialølbar øludsalg. <br>Baren ligger i den hyggelige middelalderby i indre København, <br>tæt på Christiansborg og strøget. Så uanset om du nyder strøget <br>eller den mere kulturelle del af København, så slå et smut forbi Godt Øl <br>og nyd den hyggelige stemning over et glas Godt Øl.</p>
-        </div>
-
     </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+    </script>
+
+    <section id="Om">
+        <div class="sectionwrapper">
+            <div class="video">
+                <h3>Vores korte video</h3>
+            </div>
+            <div class="tekst">
+                <p>Godt Øl er en hyggelig specialølbar øludsalg. <br>Baren ligger i den hyggelige middelalderby i indre København, <br>tæt på Christiansborg og strøget. Så uanset om du nyder strøget <br>eller den mere kulturelle del af København, så slå et smut forbi Godt Øl <br>og nyd den hyggelige stemning over et glas Godt Øl.</p>
+            </div>
+
+        </div>
 
 
-</section>
+    </section>
 
-<footer>
+    <footer>
 
-</footer>
+    </footer>
 </body>
+
 </html>

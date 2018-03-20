@@ -9,17 +9,24 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="forside.html">Forside</a></li>
-                <li><a href="om.html">Om Godt Øl</a></li>
-                <li><a href="oelkort.html">Ølkort</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="#kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+   <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="forside.html">Forside</a>
+                <a href="om.html">Om Godt Øl</a>
+                <a href="oelkort.html">Ølkort</a>
+                <a href="events.html">Events</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <script>
+            function openNav () {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+        </script>
     <section id="kontakt">
         <h3>Kontakt os</h3>
         <div class="info">
