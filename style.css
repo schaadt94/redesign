@@ -2,8 +2,9 @@
 
 body {
     /*background: linear-gradient(black, #282828, #282828);*/
-    background: #282828
+    background: #101010
 }
+
 
 h1 {
     color: #f0cf81;
@@ -27,7 +28,8 @@ header {
     justify-content: space-between;
     height: 100px;
     margin: 30px;
-    width: 95%;
+
+
 
 
 }
@@ -49,8 +51,8 @@ a hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #282828;
-    background-color: #282828;
+    background-color: #101010;
+    background-color: #101010;
     overflow-x: hidden;
     transition: 0.5s;
 
@@ -76,7 +78,7 @@ a hover {
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #f1f1f1;
+    color: #d6a126;
 }
 
 .overlay .closebtn {
@@ -108,6 +110,19 @@ a hover {
 /*om slut*/
 
 /*oelkort start*/
+
+.beer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.billede img {
+    width: 300px;
+    flex-grow: 1;
+    margin: 5px;
+}
 
 /*oelkort slut*/
 
