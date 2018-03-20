@@ -12,6 +12,7 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
+            <img src="images/godtoel_logo.png" width="150px" alt="Godt øl logo">
             <a href="forside.html">Forside</a>
             <a href="om.html">Om Godt Øl</a>
             <a href="oelkort.html">Ølkort</a>
@@ -19,13 +20,16 @@
             <a href="kontakt.html">Kontakt</a>
         </div>
     </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <span style="font-size:30px;cursor:pointer; color:#f0cf81;" onclick="openNav()">&#9776; </span>
 
     <script>
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
         }
 
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
     </script>
 
     <section id="Om">

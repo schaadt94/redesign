@@ -1,7 +1,7 @@
 /*General layout start*/
 
 body {
-    background: white;
+    background: #282828;
 }
 
 h3 {
@@ -14,7 +14,7 @@ p {
 
 /*General layout slut*/
 
-/* header og Nav */
+/* menu start*/
 
 .overlay {
     height: 100%;
@@ -23,11 +23,13 @@ p {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #282828;
+    background-color: #282828;
     overflow-x: hidden;
     transition: 0.5s;
+
 }
+
 
 .overlay-content {
     position: relative;
@@ -41,7 +43,7 @@ p {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #f0cf81;
     display: block;
     transition: 0.3s;
 }
@@ -69,7 +71,7 @@ p {
     }
 }
 
-/*header og nav slut*/
+/*menu slut*/
 
 /*forside start*/
 

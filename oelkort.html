@@ -10,23 +10,27 @@
 
 <body>
     <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="forside.html">Forside</a>
-                <a href="om.html">Om Godt Øl</a>
-                <a href="oelkort.html">Ølkort</a>
-                <a href="events.html">Events</a>
-                <a href="kontakt.html">Kontakt</a>
-            </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <img src="images/godtoel_logo.png" width="150px" alt="Godt øl logo">
+            <a href="forside.html">Forside</a>
+            <a href="om.html">Om Godt Øl</a>
+            <a href="oelkort.html">Ølkort</a>
+            <a href="events.html">Events</a>
+            <a href="kontakt.html">Kontakt</a>
         </div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </div>
+    <span style="font-size:30px;cursor:pointer; color:#f0cf81;" onclick="openNav()">&#9776; </span>
 
-        <script>
-            function openNav () {
-                document.getElementById("myNav").style.width = "100%";
-            }
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
 
-        </script>
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 </body>
 <section id="oelkort">
     <h3>Ølkort</h3>
