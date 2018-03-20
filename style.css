@@ -20,6 +20,25 @@ p {
 
 /* menu start*/
 
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100px;
+    margin: 30px;
+
+}
+
+p a {
+    color: #f0cf81;
+    font-size: 36px;
+    padding-right: 10px;
+}
+
+a hover {
+    color: #f0cf81;
+}
+
 .overlay {
     height: 100%;
     width: 0;
