@@ -6,16 +6,27 @@ body {
 }
 
 
+
 h1 {
-    color: #f0cf81;
+    text-align: center;
+    color: #866313;
+    font-size: 2em;
+    letter-spacing: 2px
 }
 
 h4 {
+    text-align: center;
     color: #f0cf81;
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+
 }
 
 p {
+    text-align: center;
     color: #f0cf81;
+    font-size: 0.5 em;
+    line-height: 1.5em;
 }
 
 /*General layout slut*/
@@ -124,9 +135,52 @@ a hover {
     margin: 5px;
 }
 
+.undermenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.vin {
+    padding-left: 40px;
+    text-align: center;
+    Line-height: 1.5em;
+}
+
+.drinks {
+
+    text-align: center;
+    Line-height: 1.5em;
+}
+
+.snacks {
+    padding-right: 160px;
+    text-align: center;
+    Line-height: 1.5em;
+}
+
 /*oelkort slut*/
 
 /*Event start*/
+
+.sectionwrapper {
+    display: flex;
+    width: 100%
+}
+
+.tekst {
+    flex-grow: 1;
+    width: 550px;
+    padding: 20px;
+
+
+}
+
+.image img {
+    flex-grow: 1;
+    width: 650px;
+}
+
 
 /*Event slut*/
 
