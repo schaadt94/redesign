@@ -1,7 +1,8 @@
 /*General layout start*/
 
 body {
-    background: #282828;
+    /*background: linear-gradient(black, #282828, #282828);*/
+    background: #282828
 }
 
 h1 {
@@ -26,6 +27,8 @@ header {
     justify-content: space-between;
     height: 100px;
     margin: 30px;
+    width: 95%;
+
 
 }
 
