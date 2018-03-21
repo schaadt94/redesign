@@ -6,6 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Godt øl redesign forside</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        var imagePaths = [
+            "images/beer.jpg", "images/bar.jpg", "images/flereoel.jpg", "images/oel.jpg", "images/oel2.jpg"
+        ];
+        var showCanvas = null;
+        var showCanvasCtx = null;
+        var img = document.createElement("img");
+        var currentImage = 0;
+        var revealTimer;
+
+        window.onload = function() {
+            showCanvas = document.getElementById('showCanvas');
+            showCanvasCtx = showCanvas.getContext('2d');
+
+            img.setAttribute('width', '1080');
+            img.setAttribute('height', '580');
+            switchImage();
+
+            // start the animation
+            setInterval(switchImage, 3000);
+        }
+
+
+        function switchImage() {
+            img.setAttribute('src', imagePaths[currentImage++]);
+            if (currentImage >= imagePaths.length)
+                currentImage = 0;
+
+            showCanvasCtx.globalAlpha = 0.1;
+            revealTimer = setInterval(revealImage, 100);
+        }
+
+        function revealImage() {
+            showCanvasCtx.save();
+            showCanvasCtx.drawImage(img, 0, 0, 1080, 580);
+            showCanvasCtx.globalAlpha += 0.1;
+            if (showCanvasCtx.globalAlpha >= 1.0)
+                clearInterval(revealTimer);
+            showCanvasCtx.restore();
+        }
+    </script>
+
 </head>
 
 <body>
@@ -19,6 +61,14 @@
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
+        <section id="forside">
+
+            <canvas id='showCanvas' width='1080' height='580'>
+               Canvas Not Supported
+           </canvas>
+
+
+        </section>
     </header>
 </body>
 <footer>
