@@ -9,10 +9,103 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Godt øl redesign forside</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        var imagePaths = [
+            "images/beer.jpg", "images/bar.jpg", "images/flereoel.jpg", "images/oel.jpg", "images/oel2.jpg"
+        ];
+        var showCanvas = null;
+        var showCanvasCtx = null;
+        var img = document.createElement("img");
+        var currentImage = 0;
+        var revealTimer;
+
+        window.onload = function() {
+            showCanvas = document.getElementById('showCanvas');
+            showCanvasCtx = showCanvas.getContext('2d');
+
+            img.setAttribute('width', '1080');
+            img.setAttribute('height', '580');
+            switchImage();
+
+            // start the animation
+            setInterval(switchImage, 3000);
+        }
+
+
+        function switchImage() {
+            img.setAttribute('src', imagePaths[currentImage++]);
+            if (currentImage >= imagePaths.length)
+                currentImage = 0;
+
+            showCanvasCtx.globalAlpha = 0.1;
+            revealTimer = setInterval(revealImage, 100);
+        }
+
+        function revealImage() {
+            showCanvasCtx.save();
+            showCanvasCtx.drawImage(img, 0, 0, 1080, 580);
+            showCanvasCtx.globalAlpha += 0.1;
+            if (showCanvasCtx.globalAlpha >= 1.0)
+                clearInterval(revealTimer);
+            showCanvasCtx.restore();
+        }
+    </script>
+
 </head>
 
 <body>
+<<<<<<< HEAD
 
+=======
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="#forside.html">Forside</a></li>
+                <li><a href="om.html">Om Godt Øl</a></li>
+                <li><a href="oelkort.html">Ølkort</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <section id="forside">
+
+            <canvas id='showCanvas' width='1080' height='580'>
+               Canvas Not Supported
+           </canvas>
+
+
+        </section>
+    </header>
+
+    <footer>
+        =======
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img src="images/godtoel_logo.png" width="150px" alt="Godt øl logo">
+                <a href="forside.html">Forside</a>
+                <a href="om.html">Om Godt Øl</a>
+                <a href="oelkort.html">Ølkort</a>
+                <a href="events.html">Events</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer; color:#f0cf81;" onclick="openNav()">&#9776; </span> >>>>>>> origin/master
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+        <img src="images/godtoel_logo.png" width="100px" alt="Godt øl logo">
+        <p><a href="https://www.facebook.com/godtoel.dk/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a></p>
+    </footer>
+>>>>>>> origin/master
 
 </body>
 </html>
