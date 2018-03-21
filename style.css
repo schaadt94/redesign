@@ -114,6 +114,10 @@ a hover {
 
 /*forside start*/
 
+canvas#showCanvas {
+    margin-left: 90px;
+}
+
 /*forside slut*/
 
 /*om start*/
