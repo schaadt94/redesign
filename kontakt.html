@@ -6,29 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Godt øl redesign kontakt information</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="forside.html">Forside</a></li>
-                <li><a href="om.html">Om Godt Øl</a></li>
-                <li><a href="oelkort.html">Ølkort</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="#kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="kontakt">
-        <h3>Kontakt os</h3>
-        <div class="info">
-            <div class="tekst"></div>
-            <div class="kontakt"></div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img src="images/godtoel_logo.png" width="150px" alt="Godt øl logo">
+                <a href="forside.html">Forside</a>
+                <a href="om.html">Om Godt Øl</a>
+                <a href="oelkort.html">Ølkort</a>
+                <a href="events.html">Events</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
         </div>
-        <div class="aaben">
-            <div class="aabning">
-                <h3>Åbningstider</h3>
+        <span style="font-size:30px;cursor:pointer; color:#f0cf81;" onclick="openNav()">&#9776; </span>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+        <img src="images/godtoel_logo.png" width="100px" alt="Godt øl logo">
+        <p><a href="https://www.facebook.com/godtoel.dk/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a></p>
+    </header>
+
+    <section id="kontakt">
+
+        <div class="info">
+            <div class="tekst">
+                <h1>Kontakt os</h1>
+                <p>Ønsker du at komme i kontakt med Godt Øl<br>så kontakt os, på mobil: +45 23 35 68 66. <br>eller send os en e-mail via. formularen.</p>
+            </div>
+            <div class="kontakt">
+                <div class="container">
+                    <form action="/action_page.php">
+
+                        <input type="text" id="fname" name="firstname" placeholder="Dit navn..">
+
+                        <input type="text" id="fname" name="firstname" placeholder="Din E-mail adresse..">
+
+                        <textarea id="subject" name="subject" placeholder="Skriv din henvendelse her.."></textarea>
+
+
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="open">
+            <div class="time">
+                <h1>Åbningstider</h1>
                 <p>Mandag 15-24
                     <br>Tirsdag 15-24
                     <br>Onsdag 15-24
@@ -37,15 +74,24 @@
                     <br>Lørdag 15-01
                     <br>Søndag 15-23</p>
             </div>
-            <div class="kort">Billede af kort</div>
+            <div class="kort">
+                <img src="images/kort.jpg" width="40%" alt="knabrostræde 25, 1210 københavn k">
+            </div>
+        </div>
         </div>
         <div class="Billeder">
-            <div class="billede">billede ind her</div>
-            <div class="billede">billede</div>
+            <div class="billede">
+                <!--       indsæt billeder nedenfor        -->
+                <img src="images/" alt="stemningen på baren">
+            </div>
+            <div class="billede">
+                <img src="images/" alt="stemningen på baren">
+            </div>
         </div>
     </section>
     <footer>
 
     </footer>
 </body>
+
 </html>

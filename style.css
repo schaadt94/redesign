@@ -1,29 +1,248 @@
-ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #000000;
-    width: 100%;
-    padding: 5px;
+/*General layout start*/
 
-
-
+body {
+    /*background: linear-gradient(black, #282828, #282828);*/
+    background: #101010
 }
 
-li {
-    float: left;
-}
 
-li a {
-    display: block;
-    color: #bfaa52;
+
+h1 {
     text-align: center;
-    Letter-spacing: 1px;
+    color: #866313;
+    font-size: 2em;
+    letter-spacing: 2px
+}
+
+h4 {
+    text-align: center;
+    color: #f0cf81;
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+
+}
+
+p {
+    text-align: center;
+    color: #f0cf81;
+    font-size: 0.5 em;
+    line-height: 1.5em;
+}
+
+/*General layout slut*/
+
+/* menu start*/
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100px;
+    margin: 30px;
+
+
+
+
+}
+
+p a {
+    color: #f0cf81;
+    font-size: 36px;
+    padding-right: 10px;
+}
+
+a hover {
+    color: #f0cf81;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #101010;
+    background-color: #101010;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
     text-decoration: none;
-    padding: 5px 30px;
+    font-size: 36px;
+    color: #f0cf81;
+    display: block;
+    transition: 0.3s;
 }
 
-li a:hover {
-    background-color: rgba(237, 235, 208, 0.17);
+.overlay a:hover,
+.overlay a:focus {
+    color: #d6a126;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/*menu slut*/
+
+/*forside start*/
+
+/*forside slut*/
+
+/*om start*/
+
+/*om slut*/
+
+/*oelkort start*/
+
+.beer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 
 }
 
+.billede img {
+    width: 300px;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.undermenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.vin {
+    padding-left: 40px;
+    text-align: center;
+    Line-height: 1.5em;
+}
+
+.drinks {
+
+    text-align: center;
+    Line-height: 1.5em;
+}
+
+.snacks {
+    padding-right: 160px;
+    text-align: center;
+    Line-height: 1.5em;
+}
+
+/*oelkort slut*/
+
+/*Event start*/
+
+.sectionwrapper {
+    display: flex;
+    width: 100%
+}
+
+.tekst {
+    flex-grow: 1;
+    width: 550px;
+    padding: 20px;
+
+
+}
+
+.image img {
+    flex-grow: 1;
+    width: 650px;
+}
+
+
+/*Event slut*/
+
+/*Kontakt start*/
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tekst {
+    width: 600px;
+}
+
+.kontakt {
+    width: 600px;
+
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #fafafa;
+    color: #101010;
+    padding: 8px 20px;
+    border: none;
+
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #bfaa52;
+}
+
+.container {
+    background-color: #1c1a1a;
+    padding: 20px;
+}
+
+.open {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.time {
+    width: 650px;
+}
+
+.kort img {
+    width: 550px;
+}
+
+/*kontakt slut*/

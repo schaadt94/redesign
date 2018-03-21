@@ -4,25 +4,44 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Godt øl redesign menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="forside.html">Forside</a></li>
-                <li><a href="om.html">Om Godt Øl</a></li>
-                <li><a href="#oelkort.html">Ølkort</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img src="images/godtoel_logo.png" width="150px" alt="Godt øl logo">
+                <a href="forside.html">Forside</a>
+                <a href="om.html">Om Godt Øl</a>
+                <a href="oelkort.html">Ølkort</a>
+                <a href="events.html">Events</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer; color:#f0cf81;" onclick="openNav()">&#9776; </span>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+
+        </script>
+        <img src="images/godtoel_logo.png" width="100px" alt="Godt øl logo">
+        <p><a href="https://www.facebook.com/godtoel.dk/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a></p>
     </header>
 </body>
 <section id="oelkort">
-    <h3>Ølkort</h3>
+    <h1>Ølkort</h1>
     <div class="beer">
         <div class="billede"><img src="images/1.jpg"></div>
         <div class="billede"><img src="images/2.jpg"></div>
@@ -39,22 +58,25 @@
     </div>
     <div class="undermenu">
         <div class="vin">
-            <h3>Vin kort</h3>
-            Rødvin – Crystal Bay, Pinot Noir fra Syd Australien
-            <br>Hvidvin – Crystal Bay, Sauvignon Blanc fra New Zealand
+            <h1>Vin kort</h1>
+            <p>Rødvin – Crystal Bay, <br>Pinot Noir fra Syd Australien
+                <br>
+                <br>Hvidvin – Crystal Bay, <br>Sauvignon Blanc fra New Zealand</p>
         </div>
         <div class="drinks">
-            <h3>Drinks kort</h3>
-            Rom og Cola<br> Whisky og cola<br> Gin og Tonic 4 cl. Gin Bombay Sapphire, fevertree tonic.<br> Gin Hass. 4 cl. Bombay Sapphire, schwepes lemon, mangosirup, knust is lime<br> Tom Collins – 4 cl. Bombay Sapphire, 2 cl.citronsaft, sukker, pellegrino, knust is.<br> Godt og Blåt – 4 cl. Bombay Sapphire, Blå Caracao, appelsin, tonic, knust is.</div>
+            <h1>Drinks kort</h1>
+            <p>Rom og Cola<br> Whisky og cola<br>Gin og tonic<br> Gin Hass. <br> Tom Collins <br> Godt og Blåt</p>
+        </div>
+        <div class="snacks">
+            <h1>Snacks</h1>
+            <p>Chips
+                <br>Beernuts
+                <br>Peanuts
+                <br>Ølpølser
+            </p>
+        </div>
     </div>
-    <div class="snacks">
-        <h3>Snacks</h3>
-        <p>Chips
-            <br>Beernuts
-            <br>Peanuts
-            <br>Ølpølser
-        </p>
-    </div>
+
 
 </section>
 

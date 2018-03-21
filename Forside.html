@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Godt øl redesign forside</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
@@ -52,6 +55,7 @@
 
 <body>
     <header>
+
         <nav>
             <ul>
                 <li><a href="#forside.html">Forside</a></li>
@@ -70,9 +74,34 @@
 
         </section>
     </header>
+
+    <footer>
+        =======
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img src="images/godtoel_logo.png" width="150px" alt="Godt øl logo">
+                <a href="forside.html">Forside</a>
+                <a href="om.html">Om Godt Øl</a>
+                <a href="oelkort.html">Ølkort</a>
+                <a href="events.html">Events</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer; color:#f0cf81;" onclick="openNav()">&#9776; </span> >>>>>>> origin/master
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+        <img src="images/godtoel_logo.png" width="100px" alt="Godt øl logo">
+        <p><a href="https://www.facebook.com/godtoel.dk/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a></p>
+    </footer>
+
 </body>
-<footer>
-
-</footer>
-
 </html>
