@@ -52,6 +52,7 @@
                 document.getElementById("myNav").style.width = "0%";
 
             }
+
         </script>
 
         <img src="images/godtoel_logo.png" width="100px" alt="Godt øl logo">
@@ -90,7 +91,7 @@
 
             img.setAttribute('width', '1080');
 
-            img.setAttribute('height', '580');
+            img.setAttribute('height', '450');
 
             switchImage();
 
@@ -123,7 +124,7 @@
 
             showCanvasCtx.save();
 
-            showCanvasCtx.drawImage(img, 0, 0, 1080, 580);
+            showCanvasCtx.drawImage(img, 0, 0, 1080, 450);
 
             showCanvasCtx.globalAlpha += 0.1;
 
@@ -134,13 +135,14 @@
             showCanvasCtx.restore();
 
         }
+
     </script>
 
 
 
     <section id="forside">
 
-        <canvas id='showCanvas' width='1080' height='580'>
+        <canvas id='showCanvas' width='1080' height='450'>
 
                Canvas Not Supported
 
@@ -151,4 +153,5 @@
 
 
 </body>
+
 </html>
