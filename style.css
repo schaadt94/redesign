@@ -154,38 +154,23 @@ a hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
+    justify-content: center;
 
 }
 
 .billede img {
     width: 300px;
     flex-grow: 1;
-    margin: 5px;
+    margin: 8px;
+
 }
 
 .undermenu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
-}
+    justify-content: space-between;
 
-.vin {
-    padding-left: 40px;
-    text-align: center;
-    Line-height: 1.5em;
-}
 
-.drinks {
-
-    text-align: center;
-    Line-height: 1.5em;
-}
-
-.snacks {
-    padding-right: 160px;
-    text-align: center;
-    Line-height: 1.5em;
 }
 
 /*oelkort slut*/
