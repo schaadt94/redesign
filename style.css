@@ -146,6 +146,14 @@ a hover {
 
 /*om start*/
 
+.om {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.video {}
+
 /*om slut*/
 
 /*oelkort start*/
@@ -179,18 +187,19 @@ a hover {
 
 .sectionwrapper {
     display: flex;
+    flex-wrap: wrap;
     width: 100%
 }
 
 .tekst {
     flex-grow: 1;
-    padding-top: 30px
+    padding-top: 30px;
 }
 
 .image img {
     flex-grow: 1;
     width: 35vw;
-    padding-right: 70px;
+    padding: 50px;
     justify-content: center;
 }
 
@@ -264,6 +273,6 @@ input[type=submit]:hover {
 
 @media screen and (min-height: 450px) {
     .image img {
-        width: 100;
+        width: 300px;
     }
 }
