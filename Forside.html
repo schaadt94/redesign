@@ -22,15 +22,15 @@
 
                 <img src="images/godtoel_logo.png" width="150px" alt="Godt øl logo">
 
-                <a href="forside.html">Forside</a>
+                <a href="#forside.html">FORSIDE</a>
 
-                <a href="om.html">Om Godt Øl</a>
+                <a href="om.html">OM GODT ØL</a>
 
-                <a href="oelkort.html">Ølkort</a>
+                <a href="oelkort.html">ØLKORT</a>
 
-                <a href="events.html">Events</a>
+                <a href="events.html">EVENTS</a>
 
-                <a href="kontakt.html">Kontakt</a>
+                <a href="kontakt.html">KONTAKT</a>
 
             </div>
 
@@ -52,7 +52,6 @@
                 document.getElementById("myNav").style.width = "0%";
 
             }
-
         </script>
 
         <img src="images/godtoel_logo.png" width="100px" alt="Godt øl logo">
@@ -67,7 +66,7 @@
     <script type="text/javascript">
         var imagePaths = [
 
-            "images/beer.jpg", "images/bar.jpg", "images/beers.jpg", "images/oel.jpg", "images/oel2.jpg"
+            "images/beer.jpg", "images/bar.jpg", "images/flereoel.jpg", "images/oel.jpg", "images/oel2.jpg"
 
         ];
 
@@ -91,13 +90,12 @@
 
             img.setAttribute('width', '1080');
 
-            img.setAttribute('height', '450');
+            img.setAttribute('height', '580');
 
             switchImage();
 
 
             // start the animation
-
 
             setInterval(switchImage, 5000);
 
@@ -125,7 +123,7 @@
 
             showCanvasCtx.save();
 
-            showCanvasCtx.drawImage(img, 0, 0, 1080, 450);
+            showCanvasCtx.drawImage(img, 0, 0, 1080, 580);
 
             showCanvasCtx.globalAlpha += 0.1;
 
@@ -136,20 +134,21 @@
             showCanvasCtx.restore();
 
         }
-
     </script>
 
 
 
+    <section id="forside">
 
-    <canvas id='showCanvas' width='1080' height='450'>
+        <canvas id='showCanvas' width='1080' height='580'>
 
                Canvas Not Supported
 
            </canvas>
 
+    </section>
+
 
 
 </body>
-
 </html>
