@@ -196,6 +196,7 @@ a hover {
 
 .sectionwrapper {
     display: flex;
+    flex-wrap: wrap;
     width: 100%
 }
 
@@ -219,18 +220,20 @@ a hover {
 /*Kontakt start*/
 
 .info {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
-    width: 100%;
+    width: 45vw;
+    flex-direction: row;
+
 }
 
 .tekst {
     width: 45vw;
+    padding-bottom: 90px;
 }
 
 .kontakt {
     width: 45vw;
-
 }
 
 input[type=text],
@@ -259,22 +262,24 @@ input[type=submit]:hover {
 }
 
 .container {
-    background-color: #1c1a1a;
+    background-color: #101010;
     padding: 20px;
 }
 
 .open {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
-    width: 100%;
+    width: 45vw;
+    float: right;
+
 }
 
 .time {
-    width: 50vw;
+    width: 45vw;
+    padding-top: 20px;
 }
 
 .kort img {
-    margin-left: 30px;
     width: 41.7vw;
     padding: 20px;
 }
