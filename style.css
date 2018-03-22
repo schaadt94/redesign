@@ -157,6 +157,7 @@ a hover {
     flex-wrap: wrap;
     flex-direction: row;
 
+
 }
 
 .billede img {
@@ -224,11 +225,11 @@ a hover {
 }
 
 .tekst {
-    width: 600px;
+    width: 45vw;
 }
 
 .kontakt {
-    width: 600px;
+    width: 45vw;
 
 }
 
@@ -269,13 +270,24 @@ input[type=submit]:hover {
 }
 
 .time {
-    width: 600px;
+    width: 50vw;
 }
 
 .kort img {
-    margin-left: 45px;
-    width: 550px;
+    margin-left: 30px;
+    width: 41.7vw;
     padding: 20px;
 }
 
 /*kontakt slut*/
+
+@media screen and (max-height: 450px) {
+    .container {
+        width: 100%;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
