@@ -5,13 +5,34 @@ body {
     background: #101010
 }
 
+@font-face {
+    font-family: 'bitstream_vera_serifbold';
+    src: url('fonte/verasebd-webfont.woff2') format('woff2'),
+    url('fonte/verasebd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bitstream_vera_serifroman';
+    src: url('fonte/verase-webfont.woff2') format('woff2'),
+    url('fonte/verase-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 h1 {
     text-align: center;
     color: #c39939;
     font-size: 2em;
-    letter-spacing: 2px
+
+    font-family: 'bitstream_vera_serifbold';
 }
 
 h4 {
@@ -85,6 +106,7 @@ a hover {
     color: #f0cf81;
     display: block;
     transition: 0.3s;
+    font-family: 'bitstream_vera_serifbold';
 }
 
 .overlay a:hover,
