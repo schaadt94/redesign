@@ -1,7 +1,6 @@
 /*General layout start*/
 
 body {
-    /*background: linear-gradient(black, #282828, #282828);*/
     background: #101010
 }
 
@@ -31,7 +30,6 @@ h1 {
     text-align: center;
     color: #c39939;
     font-size: 2em;
-
     font-family: 'bitstream_vera_serifbold';
 }
 
@@ -156,7 +154,7 @@ a hover {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
+    justify-content: center;
 
 }
 
@@ -164,30 +162,15 @@ a hover {
     width: 300px;
     flex-grow: 1;
     margin: 5px;
+
 }
 
 .undermenu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
-}
+    justify-content: space-between;
 
-.vin {
-    padding-left: 40px;
-    text-align: center;
-    Line-height: 1.5em;
-}
 
-.drinks {
-
-    text-align: center;
-    Line-height: 1.5em;
-}
-
-.snacks {
-    padding-right: 160px;
-    text-align: center;
-    Line-height: 1.5em;
 }
 
 /*oelkort slut*/
@@ -202,15 +185,13 @@ a hover {
 
 .tekst {
     flex-grow: 1;
-    width: 550px;
-    padding: 20px;
-
-
+    padding-top: 30px
 }
 
 .image img {
     flex-grow: 1;
-    height: 650px;
+    width: 35vw;
+    padding-right: 70px;
     justify-content: center;
 }
 
@@ -286,13 +267,8 @@ input[type=submit]:hover {
 
 /*kontakt slut*/
 
-@media screen and (max-height: 450px) {
-    .container {
-        width: 100%;
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+@media screen and (min-height: 450px) {
+    .image img {
+        width: 100;
     }
 }
