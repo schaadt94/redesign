@@ -207,7 +207,8 @@ a hover {
 
 .image img {
     flex-grow: 1;
-    width: 650px;
+    height: 650px;
+    justify-content: center;
 }
 
 
