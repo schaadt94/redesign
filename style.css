@@ -1,7 +1,6 @@
 /*General layout start*/
 
 body {
-    /*background: linear-gradient(black, #282828, #282828);*/
     background: #101010
 }
 
@@ -31,7 +30,6 @@ h1 {
     text-align: center;
     color: #c39939;
     font-size: 2em;
-
     font-family: 'bitstream_vera_serifbold';
 }
 
@@ -201,15 +199,13 @@ a hover {
 
 .tekst {
     flex-grow: 1;
-    width: 550px;
-    padding: 20px;
-
-
+    padding-top: 30px
 }
 
 .image img {
     flex-grow: 1;
-    height: 650px;
+    width: 35vw;
+    padding-right: 70px;
     justify-content: center;
 }
 
@@ -281,13 +277,8 @@ input[type=submit]:hover {
 
 /*kontakt slut*/
 
-@media screen and (max-height: 450px) {
-    .container {
-        width: 100%;
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+@media screen and (min-height: 450px) {
+    .image img {
+        width: 100;
     }
 }
