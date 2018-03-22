@@ -214,7 +214,10 @@ a hover {
 }
 
 .kontakt {
-    width: 45vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 input[type=text],
