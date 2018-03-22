@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'bitstream_vera_serifbold';
-    src: url('verasebd-webfont.woff2') format('woff2'),
-         url('verasebd-webfont.woff') format('woff');
+    src: url('fonte/verasebd-webfont.woff2') format('woff2'),
+         url('fonte/verasebd-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'bitstream_vera_serifroman';
-    src: url('verase-webfont.woff2') format('woff2'),
-         url('verase-webfont.woff') format('woff');
+    src: url('fonte/verase-webfont.woff2') format('woff2'),
+         url('fonte/verase-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
