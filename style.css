@@ -91,6 +91,7 @@ a hover {
 }
 
 
+
 .overlay-content {
     position: relative;
     top: 15%;
@@ -102,7 +103,7 @@ a hover {
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.9em;
     color: #f0cf81;
     display: block;
     transition: 0.3s;
