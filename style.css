@@ -269,11 +269,13 @@ input[type=submit]:hover {
 }
 
 .time {
-    width: 650px;
+    width: 600px;
 }
 
 .kort img {
+    margin-left: 45px;
     width: 550px;
+    padding: 20px;
 }
 
 /*kontakt slut*/
